@@ -10,7 +10,7 @@ class ArticleController extends AbstractController {
 
     #[Route('/article', name: 'article')]
     public function index(): Response {
-        return $this->render('article/index.html.twig');
+        return $this->render('base.html.twig');
     }
 
     #[Route('/article/add', name: 'article-add')]

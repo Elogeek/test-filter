@@ -14,14 +14,14 @@ body {
     font-weight: bold;
 }
 
-.alert-success {
+.alert--success {
     background: #3adb76;
 }
 
-.alert-info {
+.alert--info {
     background: #5eb5e0;
 }
 
-.alert-danger {
+.alert--danger {
     background: red;
 }
