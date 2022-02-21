@@ -25,3 +25,11 @@ body {
 .alert--danger {
     background: red;
 }
+
+.citation {
+    padding: 5px;
+}
+
+.test {
+    margin: 10px;
+}

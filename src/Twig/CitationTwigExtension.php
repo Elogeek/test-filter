@@ -9,7 +9,8 @@ class CitationTwigExtension extends AbstractExtension {
     public function getFilters() {
         return [
             new TwigFilter('citation', [$this, 'makeCitation']),
-            new TwigFilter('smile', [$this, 'addSmiley'])
+            new TwigFilter('smile', [$this, 'addSmiley']),
+            new TwigFilter('emoji', [$this, 'emojiFilter'])
         ];
     }
 
@@ -24,4 +25,5 @@ class CitationTwigExtension extends AbstractExtension {
     public function addSmiley(string $text): string {
         return "$text 🥳 ";
     }
+
 }

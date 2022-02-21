@@ -14,6 +14,7 @@
         {% endblock %}
     </head>
     <body>
+        {# test menu #}
         <div class="sidebar">
             <ul>
                 {% block sidebar %}
@@ -24,7 +25,19 @@
             </ul>
         </div>
         {% block body %}
-             {{ "Une super citation !"|citation | smile }}
+            {# test citation and smiley #}
+            <div class="citation">
+                {{ "Une super citation !" | citation | smile }}
+            </div>
+
+            {# test function toInteger #}
+            <div class="test">
+                {% if toInteger("15hfdiuhiufdu") == 15 %}
+                    <p>OK, tout est nickel! </p>
+                {% else %}
+                    <p>Ouups, il y a une erreur !</p>
+                {% endif %}
+            </div>
         {% endblock %}
     </body>
 </html>
