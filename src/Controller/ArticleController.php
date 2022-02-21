@@ -16,6 +16,9 @@ class ArticleController extends AbstractController {
     #[Route('/article/add', name: 'article-add')]
     public function add(): Response {
         $this->addFlash('success', " Votre article est ajouté !");
-        return $this->render('article/add');
+        $this->addFlash('success', "Merci de votre participation");
+        $this->addFlash('info', "Le message est visible pour tous le monde !");
+        $this->addFlash('danger', "Erreur tous va être supprimé !");
+        return $this->render('article/add.html.twig');
     }
 }

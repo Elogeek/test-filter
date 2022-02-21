@@ -17,3 +17,11 @@ body {
 .alert-success {
     background: #3adb76;
 }
+
+.alert-info {
+    background: #5eb5e0;
+}
+
+.alert-danger {
+    background: red;
+}
