@@ -14,6 +14,15 @@
         {% endblock %}
     </head>
     <body>
+        <div class="sidebar">
+            <ul>
+                {% block sidebar %}
+                    <li><a href="#">Tous les articles</a></li>
+                    <li><a href="#">Articles récents</a></li>
+                    <li><a href="#">Archives</a></li>
+                {% endblock %}
+            </ul>
+        </div>
         {% block body %}
             <div> HELLO </div>
         {% endblock %}

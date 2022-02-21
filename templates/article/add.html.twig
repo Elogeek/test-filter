@@ -1,5 +1,10 @@
 {% extends '/base.html.twig' %}
 
+{% block sidebar %}
+    {{ parent() }}
+    <li><a href="#">Articles les plus lus</a></li>
+{% endblock %}
+
 {% block body %}
     {% for type, messages in app.flashes %}
         {% for message in messages %}
