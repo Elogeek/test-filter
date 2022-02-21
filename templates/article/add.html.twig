@@ -1,6 +1,7 @@
 {% extends '/base.html.twig' %}
 
 {% block sidebar %}
+    {# position parent above if we want to display the parent of the menu first for example #}
     {{ parent() }}
     <li><a href="#">Articles les plus lus</a></li>
 {% endblock %}
