@@ -1,3 +1,19 @@
 body {
     background-color: lightgray;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.alert {
+    color: white;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.alert-success {
+    background: #3adb76;
 }
