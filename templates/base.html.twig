@@ -29,6 +29,12 @@
             <div class="citation">
                 {{ "Une super citation !" | citation | smile }}
             </div>
+            
+            {# test import images via file main js #}
+            <div class="pictures">
+                <img src="{{ asset('/build/images/image-1.c780fb50.webp') }}" alt="">
+                <img src="{{ asset('/build/images/image-2.08320cc3.webp') }}" alt="">
+            </div>
 
             {# test function toInteger #}
             <div class="test">

@@ -10,3 +10,7 @@ import './styles/app.css';
 
 // start the Stimulus application
 import './bootstrap';
+
+// import img via le file main js
+import './img/image-1.webp';
+import './img/image-2.webp';
