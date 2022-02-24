@@ -9,6 +9,14 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 Encore
     // directory where compiled assets will be stored
     .setOutputPath('public/build/')
+    //config with file-loader (util for gallery images)
+    .copyFiles({
+        from: './assets/images-test',
+        // main directory name
+        to: 'test-img/[path][name].[ext]',
+        // to import the file types I want and need
+        pattern: /\.(png|jpg|jpeg|webp)$/
+    })
     // public path used by the web server to access the output path
     .setPublicPath('/build')
     // only needed for CDN's or sub-directory deploy
